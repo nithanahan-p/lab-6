@@ -12,8 +12,8 @@ cout<<endl;}
 //func that recieves u,c,r and returns to salestax(st) and totdue(td)
 void funcR2(int u,int c,int r,int &st,int &td){
 //calculate st and td
-  st=(c*r/100);
-  td=(u*c*(1+(r/100)));}
+  st=u*c*r;
+  td=st+(u*c);}
 //func that recieves u,c,r,st and td and outputs them in a readable format
 void func3(int u,int c,int r,int st,int td){
 cout<<"value of unitcost is "<<c<<endl;
